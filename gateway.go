@@ -24,7 +24,7 @@ func DiscoverGateway() (*net.IP, error) {
 
 	err := inte.discoverGatewayOS()
 	if err != nil {
-		return nil, nil
+		return nil, err
 	}
 
 	return &inte.Gw, nil
@@ -35,7 +35,7 @@ func DiscoverInterface() (*Interface, error) {
 
 	err := inte.discoverGatewayInterfaceOS()
 	if err != nil {
-		return nil, nil
+		return nil, err
 	}
 
 	return inte, nil
