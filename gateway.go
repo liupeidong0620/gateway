@@ -12,7 +12,7 @@ var (
 )
 
 type Interface struct {
-	inte *net.Interface
+	Inte *net.Interface
 
 	Gw net.IP
 

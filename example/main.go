@@ -13,7 +13,7 @@ func main() {
 		return
 	}
 
-	fmt.Println(gw.String())
+	fmt.Println("default gateway: ", gw.String())
 
 	inte, err := gateway.DiscoverInterface()
 	if err != nil {
@@ -21,5 +21,5 @@ func main() {
 		return
 	}
 
-	fmt.Println(inte.Gw)
+	fmt.Println("eht name: ", inte.Inte.Name, ", default gateway:", inte.Gw.String())
 }

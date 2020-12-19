@@ -41,7 +41,7 @@ func (inte *Interface) discoverGatewayInterfaceOS() error {
 	inte.Gw = route.Gw
 	inte.Metric = route.Priority
 
-	inte.inte, err = net.InterfaceByIndex(route.LinkIndex)
+	inte.Inte, err = net.InterfaceByIndex(route.LinkIndex)
 
 	return err
 }

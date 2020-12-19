@@ -128,7 +128,7 @@ func (inte *Interface) discoverGatewayInterfaceOS() error {
 	inte.Gw = route.GetForwardNextHop()
 	inte.Metric = int(route.ForwardMetric1)
 
-	inte.inte, err = net.InterfaceByIndex(int(route.ForwardIfIndex))
+	inte.Inte, err = net.InterfaceByIndex(int(route.ForwardIfIndex))
 
 	return err
 }

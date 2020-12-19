@@ -85,7 +85,7 @@ func (inte *Interface) discoverGatewayInterfaceOS() error {
 		inte.Metric = int(routeMetric[0].SysType())
 	}
 
-	inte.inte, err = net.InterfaceByIndex(route_.Index)
+	inte.Inte, err = net.InterfaceByIndex(route_.Index)
 
 	return err
 }
