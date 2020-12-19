@@ -3,10 +3,12 @@ package gateway
 import (
 	"errors"
 	"net"
+	"runtime"
 )
 
 var (
-	errNoGateway = errors.New("no gateway found")
+	errNoGateway      = errors.New("no gateway found")
+	errNotImplemented = errors.New("not implemented for OS: " + runtime.GOOS)
 )
 
 type Interface struct {
