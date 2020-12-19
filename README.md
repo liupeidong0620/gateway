@@ -5,6 +5,6 @@ A simple library for discovering the IP address of the default gateway.
 # support system
 
 * linux
-* windows （no test）
+* windows （not tested）
 * darwin
-* dragonfly freebsd netbsd openbsd （no test）
+* dragonfly freebsd netbsd openbsd （not tested）
